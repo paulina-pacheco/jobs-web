@@ -10,6 +10,9 @@ $orange-color-3: #ED7A71
 $light-orange-color-hover: #bd6d52
 $dark-blue-color: #2E4956
 $dark-blue-color-2: #99B2BC
+$aqua-color: #A4D2CE
+$yellow-color: #E4D66F
+$melon-color: #F39E7E
 
 $break-small: 500px
 $break-medium: 900px
@@ -25,6 +28,30 @@ $break-large: 1200px
   background-size: cover
 .animation
   transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1)
+.center
+  text-align: center
+
+.block
+  display: inline-block
+
+.title-inside
+  font-size: 67px
+  line-height: 67px
+  padding-bottom: 5px
+  padding-left: 20px
+  &-orange
+    color: $orange-color
+  &-white
+    color: white
+  span
+    display: block
+    font-weight: bold
+
+.photos
+  .photo-large
+    width: 70%
+  .photo-small
+    width: 30%
 
 .wrapper
   margin: 0 auto
@@ -100,6 +127,12 @@ $break-large: 1200px
     img
       width: 200px
 
+.wrap-stripe
+  width: 15%
+  display: inline-block
+.wrap-blocks
+  display: inline-block
+  width: 85%
 
 .footer
   background-color: $gray-color
@@ -112,8 +145,6 @@ $break-large: 1200px
     position: relative
     padding: 50px 0px
     .wrap-stripe
-      width: 15%
-      display: inline-block
       .stripe
         background-color: $light-orange-color
         position: absolute
@@ -130,8 +161,6 @@ $break-large: 1200px
             max-width: 100%
             margin-bottom: 40px
     .wrap-blocks
-      display: inline-block
-      width: 85%
       padding: 0 40px
       .top-block
         border-bottom: 5px solid $gray-black

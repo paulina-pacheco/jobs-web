@@ -1,4 +1,37 @@
 extends ../layout
 
 block content
-  h1 NEARSOFT HOME  
+  header.home-header
+    div.video
+      iframe(src="https://www.youtube.com/embed/DlLHc7CS914?autoplay=1&color=red&controls=0&showinfo=0&loop=1" frameborder="0" allowfullscreen)
+    div.squares
+  section.home-bottom
+    div.wrapper.wrapper-12
+      div.center
+        h3.welcome Welcome to the Magic!
+      div.photos.who-we-are
+        div(class="photo-large coverimage block" style="background-image: url('images/photo_6.png')")            
+        div.photo-small.block.block-type-1
+          div.title-inside.title-inside-white
+            span this is who we are
+      div.ns-community
+        div.map           
+        div.title-community
+          span ns
+          span community
+      div.photos.internships
+        div(class="photo-large coverimage block" style="background-image: url('images/photo_7.png')")
+        div.photo-small.block.block-type-1
+          div.title-inside.title-inside-white
+            span intern-
+            span ships
+      div.photos.open-positions
+        div.photo-small.block.block-type-2
+          div.title-inside.title-inside-white
+            span open positions                            
+        div(class="photo-large coverimage block" style="background-image: url('images/photo_6.png')")
+      div.photos.labs
+        div(class="photo-large coverimage block" style="background-image: url('images/photo_7.png')")
+        div.photo-small.block.block-type-1
+          div.title-inside.title-inside-white
+            span labs      
