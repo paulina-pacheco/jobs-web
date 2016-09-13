@@ -4,6 +4,7 @@
   color: $dark-blue-color
   background-color: $gray-color
   margin-top: -120px
+  margin-bottom: 60px
 
   img
     margin-left: -20px
@@ -23,16 +24,16 @@
     color: $orange-color
     margin-top: -20px
 
+.section-title
+  h2
+    color: $orange-color
+
 .news
-  margin-top: 5em
   margin-bottom: 60px
 .news-top
   display: inline
   div
     display: inline-block
-.news-title
-  h1
-    color: $orange-color
 
 .news-search
   padding-top: 10px
@@ -45,7 +46,6 @@
     color: $dark-blue-color
 
 .news-content
-  color: gray
 
   .content-top
     border: 5px solid $dark-blue-color
@@ -67,16 +67,26 @@
     border-top: none
     padding-bottom: 30px
 
-  .content-text
+  .content-wrapper
     font-size: 20px
-    padding-top: 5em
+    padding-top: 30px
     text-align: justify
 
-  .scroll
-    border: 5px solid $orange-color
-    position: relative
-    float: right
-    margin-right: 15px
+  .content-title
+    color: $dark-blue-color
+
+  .news-title-highlight
+    color: $orange-color
+
+  .content-text
+    margin-bottom: 60px
+
+
+.scroll
+  border: 5px solid $orange-color
+  position: relative
+  float: right
+  margin-right: 15px
 
 .stripe
   border: 2.5px solid $white-gray-color
@@ -107,8 +117,8 @@
   font-weight: bold
   color: white
 
-  li 
-    margin-left: 10px
+  li
+    margin-left: 40px
   li:before
     color: $orange-color
     content: '\2014'
@@ -120,3 +130,28 @@
     color: $orange-color
 
 
+.code
+  margin-bottom: 60px
+  .code-container
+    background-color: $white-gray-color
+
+  .code-content
+    font-family: monospace
+    font-size: 16px
+    padding: 50px 0 50px 0
+    color: $orange-color
+
+.gallery
+  margin-bottom: 60px
+  .gallery-container
+    display: inline
+    margin: 80px 0 80px 0
+    height: 224px
+    .photo
+      display: inline-block
+    .photo-large
+      width: 70%
+    .photo-small
+      width: 30%
+    .fill-photo
+      height: 224px
