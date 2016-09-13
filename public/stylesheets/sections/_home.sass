@@ -8,6 +8,25 @@
       width: 100%
       height: 700px
 .home-bottom
+  .right-type
+    position: relative
+    .title-inside
+      position: absolute
+      bottom: 50px
+      right: 0px
+      width: 90%
+      text-align: right
+      span
+        padding-right: 20px
+  .left-type
+    position: relative
+    .title-inside
+      position: absolute
+      bottom: 50px
+      left: 0px
+      width: 90%
+      span
+        padding-left: 20px
   .wrapper-12
     border-left: 1px solid $gray-black
     border-right: 1px solid $gray-black
@@ -24,18 +43,25 @@
       margin: 20px auto 50px auto
       border-bottom: 1px solid $orange-color-2
       display: block
-  .ns-community
+  .ns-places
     background-color: $melon-color
     height: 400px
     position: relative
     padding: 10px
     .map
-      background-image: url("../../images/map.png")
-    .title-community
-      font-size: 76px
-      line-height: 60px
+      background-image: url("/images/map.png")
+      position: relative
+      z-index: 3
+      background-size: 700px
+      background-repeat: no-repeat
+      background-position: 400px 0px
+      width: 100%
+      height: 100%
+    .title-places
+      font-size: 80px
+      line-height: 70px
       font-weight: bold
-      color: white
+      color: rgba(0,0,0,0.6)
       position: absolute
       bottom: 20px
       left: 20px
@@ -44,13 +70,14 @@
   .labs
     .photo-small
       background-color: $gray-black
-  .open-positions
+  .cuu
     .photo-small
       background-color: $dark-blue-color
-  .who-we-are
+  .news
+    margin-bottom: 5px
     .photo-small
       background-color: $aqua-color
-  .internships
+  .hmo
     .photo-small
       background-color: $yellow-color
   .block
@@ -59,7 +86,6 @@
     border-left: 5px solid white
   .block-type-2
     border-right: 5px solid white
-    text-align: right
   .photo-large
     height: 400px
   .photo-small
