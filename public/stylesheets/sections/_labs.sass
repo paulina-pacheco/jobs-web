@@ -31,19 +31,24 @@
 .news
   margin-bottom: 60px
 .news-top
-  display: inline
   div
-    display: inline-block
+    display: inline-flex
 
 .news-search
-  padding-top: 10px
-  float: right
+
   input
+    width: 98%
+    float: right
     background-color: $gray-color
     border: none
 
   ::-webkit-input-placeholder
     color: $dark-blue-color
+  .news-icon-wrapper
+    .search-icon
+      position: relative
+      max-height: 50px
+      max-width: 50px
 
 .news-content
 
@@ -83,17 +88,19 @@
 
 
 .scroll
-  border: 5px solid $orange-color
   position: relative
   float: right
-  margin-right: 15px
+  right: 20px
+  bottom: 60px
+  img
+    max-height: 40px
 
 .stripe
-  border: 2.5px solid $white-gray-color
+  border: 3.25px solid $white-gray-color
 
 .products
-  margin-top: 80px
-  margin-bottom: 80px
+  margin-top: 40px
+  margin-bottom: 180px
 
 .products-title
   border: 5px solid $dark-blue-color
@@ -104,9 +111,13 @@
     color: $dark-blue-color
 
 .products-lists
-  display: inline
+  .medium-6
+    @media screen and (min-width: 40em)
+      width: 49.7%
+      margin-right: 2px
 
 .products-list
+  padding-top: 12px
   display: inline-block
   border: 5px solid $dark-blue-color
   background-color: $dark-blue-color
@@ -131,6 +142,7 @@
 
 
 .code
+  margin-top: 10px
   margin-bottom: 60px
   .code-container
     background-color: $white-gray-color
@@ -146,12 +158,13 @@
   .gallery-container
     display: inline
     margin: 80px 0 80px 0
-    height: 224px
+    height: 320px
     .photo
       display: inline-block
     .photo-large
-      width: 70%
+      width: 65%
     .photo-small
-      width: 30%
+      width: 33%
+      margin-right: 10px
     .fill-photo
-      height: 224px
+      height: 320px
